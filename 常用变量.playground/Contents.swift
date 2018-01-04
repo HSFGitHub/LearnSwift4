@@ -54,6 +54,38 @@ let quotation = """
 
 print(quotation)
 
+// MARK: 数组
+//使用[] 来创建 数组或者字典
+var shoppingList:[Any] = [123,"catfish","water","tulips"]
+print(shoppingList)
+
+//创建多数组
+var listArray:[String]  = Array()
+listArray.append("haha")
+
+var listAny:[Any] = Array.init(shoppingList)
+print(listAny)
+
+for var a  in listAny {
+    if a is String {
+        print(a)
+    }else{
+        print("这个不是字符串类型 \(a)")
+    }
+}
+
+//字典
+var dic = [String:Any]()
+
+dic["hah"] = 123
+dic["OO"] = 456
+
+for var value in dic.values {
+    print(value)
+}
+
+
+
 
 
 
